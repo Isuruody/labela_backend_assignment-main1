@@ -94,28 +94,38 @@ WSGI_APPLICATION = 'autocompany.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# Database
+# https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+
 
 
 # PostgreSQL db setup please uncomment when you setup
 
+
 #  please remember to install "" pip install psycopg2  ""
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'database_name',
-#         'USER': 'database_user',
-#         'PASSWORD': 'database_password',
-#         'HOST': 'localhost',  # Use the host where PostgreSQL is running
-#         'PORT': '5432',      # Default PostgreSQL port
-#     }
-# }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'CarParts',
+        'USER': 'postgres',
+        'PASSWORD': 'Your _password',
+        'HOST': 'localhost',
+        'PORT': '5437',
+    }
+}
+
+
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
