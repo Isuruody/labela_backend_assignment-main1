@@ -117,11 +117,11 @@ WSGI_APPLICATION = 'autocompany.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'CarParts',
+        'NAME': 'Your _DB',
         'USER': 'postgres',
         'PASSWORD': 'Your _password',
         'HOST': 'localhost',
-        'PORT': '5437',
+        'PORT': 'Your_Port',
     }
 }
 
